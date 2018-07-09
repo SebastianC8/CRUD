@@ -39,6 +39,7 @@
                 <td>Delete</td>
             </tr>
             </thead>
+            
             <tbody>
             <?php foreach ($sport as $sport) { ?>
                 <tr>
@@ -57,7 +58,8 @@
 
 <script>
     function deleteTeam($idSport)
-    {
+    { 
+        var a="";
         var primaryKey = $idSport;
         var option = confirm ("¿Está seguro que desea eliminar este registro?");
         if(option == true)
